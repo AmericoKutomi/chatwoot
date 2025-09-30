@@ -13,6 +13,7 @@
     "dev": "overmind start -f ./Procfile.dev",
     "ruby:prettier": "bundle exec rubocop -a",
     "build": "pnpm install && node --max-old-space-size=4096 ./node_modules/vite/bin/vite.js build",
+    "build:sdk": "set BUILD_MODE=library && vite build",
     "prepare": "husky install",
     "size": "size-limit",
     "story:dev": "histoire dev",
